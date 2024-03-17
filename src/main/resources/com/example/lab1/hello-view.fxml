@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1.HelloController">
+   <children>
+      <AnchorPane layoutX="666.0" layoutY="14.0" prefHeight="490.0" prefWidth="190.0" style="-fx-border-color: black;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Количество Очков:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="87.0" text="Выстрелов:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="ScaleLabel" layoutX="14.0" layoutY="41.0" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: white;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="ShotsLabel" layoutX="14.0" layoutY="114.0" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: white;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="StopButton" layoutX="33.0" layoutY="346.0" mnemonicParsing="false" onAction="#StopButtonClick" prefHeight="10.0" prefWidth="119.0" text="| |">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ContinueButton" layoutX="33.0" layoutY="403.0" mnemonicParsing="false" onAction="#ContinueButtonClick" prefHeight="40.0" prefWidth="119.0" text="&gt;&gt;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="517.0" prefHeight="71.0" prefWidth="842.0" style="-fx-border-color: black;">
+         <children>
+            <Button fx:id="StartButton" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#StartButtonClick" prefHeight="26.0" prefWidth="400.0" text="Начало Игры">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ShotButton" layoutX="428.0" layoutY="16.0" mnemonicParsing="false" onAction="#ShotButtonClick" prefHeight="26.0" prefWidth="400.0" text="Выстрел">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="GameArea" layoutX="14.0" layoutY="14.0" prefHeight="490.0" prefWidth="642.0" style="-fx-border-color: black;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="480.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+            <Circle fx:id="TargetBig" fill="DODGERBLUE" layoutX="440.0" layoutY="137.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="TargetSmall" fill="DODGERBLUE" layoutX="537.0" layoutY="333.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
